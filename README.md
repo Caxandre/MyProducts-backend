@@ -31,7 +31,15 @@ The following steps will help install and run MyProducts-backend on your local c
 
 4. Create migrations with *npm typeorm migration:run* or *yarn typeorm migration:run*;
 
-5. Start the development server with *npm dev:server* or *yarn dev:server*.
+5. Assign a value to the APP_SECRET variable in the ENV file, which will be used by the authentication middleware (jsonwebtoken);
+
+6. Start the development server with *npm dev:server* or *yarn dev:server*.
+
+## Tests
+
+Before running the tests, create a database with the name **"database_tests"** so that all tests can run correctly.
+
+To run the tests use the command *yarn test*
 
 ## Contact
 
